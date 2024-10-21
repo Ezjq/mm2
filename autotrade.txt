@@ -1,0 +1,76 @@
+return(function(f,A,t,c,l,E,B,b,s,n,e,d,i,h,C,...)local function u(r)local l=c({})local o,a=l,{}local d=d;local i={}for e=0,d-n do i[e]=A(e)end;local e=n;local function f()local l=h(t(r,e,e),36)e=e+n;local n=h(t(r,e,e+l-n),36)e=e+l;return n end;l=A(f())a[n]=l;while e<#r do local e=f()if i[e]then o=i[e]else local e={l,t(l,n,n)}o=c(e)end;local e={l,t(o,n,n)}i[d]=c(e);a[#a+n],l,d=o,o,d+n end;return c(a)end;local u=u('22E22927522A22D27522921I21C21O21G22A22J2791M21G2111221G1Z21321K21E27E21S2791321G1X21P27P21C21121G21H1221121Q1Z21C21I27E22L2791621C21K2111N2851I21L21K21P21H22A22C2791528621H21G22B27927924H23228U27524N25R22F2681G21U27921V28A27522827923528V27528U21V29F22922A29E27928U28U29D22929B27527829H29J22928O29E29B29K28Z29I29A22922P29I22F22927422F29629K2A329R2742A32752AA22927829B29B28Z2AF29Q28V2AO2A12292A728O2AC28V28O2AL2AX2AJ29L2AY2AP29Y29M2B627627827521121C1Y21M28N2791Y1X21C21221R2A727521V22K27929R22923521T29E28U2AI2BR2AZ29L28V2BR28U29R2A12BY2792AO22A2BP2751G21E27Q1X21127U1W21021G1Y21127F2791N21K1Z21G27L27N27M2BF2751X1Z21K21R2CM21Y28P28R21G2352CR2CI2CK21123521C2CD27V28021H23J2772792BB2BD2DJ27521228D21122B25N25K2DU2DU26G2322CA2C029C22I2B529P28V2AS29I29B29U2762972A32B929L2C32292E929W29C29L2A729U29B2AO2BV2AP2ED2BQ2A22B42C02A12DN2292DL2BE29X2292BH2BJ21R2AO2BO2ES2752BT2EP2BX2ES2E62E02AG2FG2EF2292C52F822922H27922A2E22CB2DE2CF28Q21C28S2CN2752CP2CR2CT2132CV2BM22921021R2BI21E2F02792CY2D02CM21W2D42FV2D628E21G21O1Y2DC2FS2DG2DI2ED2EZ2EX2DP28E2DS2DV2DW2322BU2FF2F92F12A32E42B629U28U2AW2FO2EU2B62H929L2E828V2ED2EM2EI2EV2AP2EH2G42H52752742HI2FN2HK29B2ER2AG2FK2FF');local d=C or function(l,o)local n,a=n,e
+while l>e and o>e do
+local d,e=l%2,o%2
+if d~=e then a=a+n end
+l,o,n=(l-d)/2,(o-e)/2,n*2
+end
+if l<o then l=o end
+while l>e do
+local o=l%2
+if o>e then a=a+n end
+l,n=(l-o)/2,n*2
+end
+return a
+end
+local function a(o,l,a)if a then
+local e=(o/2^(l-n))%2^((a-n)-(l-n)+n);return e-e%n;else
+local l=2^(l-n);return(o%(l+l)>=l)and n or e;end;end;local l=n;local function o()local a,e,o,n=f(u,l,l+3);a=d(a,81)e=d(e,81)o=d(o,81)n=d(n,81)l=l+4;return(n*16777216)+(o*65536)+(e*256)+a;end;local function h()local e=d(f(u,l,l),81);l=l+n;return e;end;local function r()local e,n=f(u,l,l+2);e=d(e,81)n=d(n,81)l=l+2;return(n*256)+e;end;local function w()local d=o();local l=o();local c=n;local d=(a(l,n,20)*(2^32))+d;local o=a(l,21,31);local l=((-n)^a(l,32));if(o==e)then
+if(d==e)then
+return l*e;else
+o=n;c=e;end;elseif(o==2047)then
+return(d==e)and(l*(n/e))or(l*(e/e));end;return E(l,o-1023)*(c+(d/(2^52)));end;local E=o;local function C(o)local a;if(not o)then
+o=E();if(o==e)then
+return c({});end;end;a=t(u,l,l+o-n);l=l+o;local l={}for e=n,#a do
+l[e]=A(d(f(t(a,e,e)),81))end
+return c(l);end;local l=o;local function D(...)return{...},s('#',...)end
+local function E()local f={};local i={};local l={};local u={f,i,nil,l};local l=o()local c={}for o=n,l do
+local n=h();local l;if(n==0)then l=(h()~=e);elseif(n==2)then l=w();elseif(n==3)then l=C();end;c[o]=l;end;for i=n,o()do
+local l=h();if(a(l,n,n)==e)then
+local d=a(l,2,3);local t=a(l,4,6);local l={r(),r(),nil,nil};if(d==e)then
+l[3]=r();l[4]=r();elseif(d==n)then
+l[3]=o();elseif(d==2)then
+l[3]=o()-(2^16)elseif(d==3)then
+l[3]=o()-(2^16)l[4]=r();end;if(a(t,n,n)==n)then l[2]=c[l[2]]end
+if(a(t,2,2)==n)then l[3]=c[l[3]]end
+if(a(t,3,3)==n)then l[4]=c[l[4]]end
+f[i]=l;end
+end;for e=n,o()do i[e-1]=E();end;u[3]=h();return u;end;local function A(l,f,c)local o=l[n];local d=l[2];local l=l[3];return function(...)local a=o;local C=d;local d=l;local u=D
+local l=n;local t=-n;local B={};local r={...};local h=s('#',...)-n;local E={};local o={};for e=e,h do
+if(e>=d)then
+B[e-d]=r[e+n];else
+o[e]=r[e+n];end;end;local e=h-d+n
+local e;local d;while true do
+e=a[l];d=e[1];if d<=9 then if d<=4 then if d<=1 then if d>0 then while 5 do
+local e=e[2]o[e](o[e+n])break end
+else o[e[2]]=f[e[3]];end;elseif d<=2 then do return end;elseif d>3 then o[e[2]][e[3]]=e[4];else l=e[3];end;elseif d<=6 then if d==5 then local r;local A,s;local h;local d;while 7399 do o[e[2]]=o[e[3]][e[4]];break;end;l=l+n;e=a[l];d=e[2];h=o[e[3]];o[d+n]=h;o[d]=h[e[4]];l=l+n;e=a[l];o[e[2]]=c[e[3]];l=l+n;e=a[l];o[e[2]]=f[e[3]];l=l+n;e=a[l];while 5 do
+d=e[2]A,s=u(o[d](o[d+n]))t=s+d-n
+r=0;for e=d,t do
+r=r+n;o[e]=A[r];end;break;end
+l=l+n;e=a[l];while 635 do
+d=e[2]o[d](i(o,d+n,t))break end
+l=l+n;e=a[l];o[e[2]]=c[e[3]];l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 5 do
+d=e[2]o[d](o[d+n])break end
+l=l+n;e=a[l];o[e[2]]=c[e[3]];l=l+n;e=a[l];while 7399 do o[e[2]]=o[e[3]][e[4]];break;end;l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 5 do
+d=e[2]o[d](o[d+n])break end
+l=l+n;e=a[l];l=e[3];else o[e[2]]=o[e[3]];l=l+n;e=a[l];while 99999 do o[e[2]]();break;end;l=l+n;e=a[l];o[e[2]]=o[e[3]];l=l+n;e=a[l];while 99999 do o[e[2]]();break;end;l=l+n;e=a[l];do return end;end;elseif d<=7 then o[e[2]]=o[e[3]];elseif d==8 then o[e[2]]={};else o[e[2]]=e[3];end;elseif d<=14 then if d<=11 then if d>10 then local t;local d;while 7399 do o[e[2]]=o[e[3]][e[4]];break;end;l=l+n;e=a[l];d=e[2];t=o[e[3]];o[d+n]=t;o[d]=t[e[4]];l=l+n;e=a[l];while 5 do
+d=e[2]o[d](o[d+n])break end
+l=l+n;e=a[l];o[e[2]]=c[e[3]];l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 5 do
+d=e[2]o[d](o[d+n])break end
+l=l+n;e=a[l];o[e[2]]=c[e[3]];l=l+n;e=a[l];while 7399 do o[e[2]]=o[e[3]][e[4]];break;end;l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 5 do
+d=e[2]o[d](o[d+n])break end
+l=l+n;e=a[l];l=e[3];else while 99999 do o[e[2]]();break;end;end;elseif d<=12 then local t;local d;o[e[2]]=c[e[3]];l=l+n;e=a[l];d=e[2];t=o[e[3]];o[d+n]=t;o[d]=t[e[4]];l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 6 do
+d=e[2]o[d]=o[d](i(o,d+n,e[3]))break end
+l=l+n;e=a[l];d=e[2];t=o[e[3]];o[d+n]=t;o[d]=t[e[4]];l=l+n;e=a[l];o[e[2]]=e[3];l=l+n;e=a[l];while 6 do
+d=e[2]o[d]=o[d](i(o,d+n,e[3]))break end
+l=l+n;e=a[l];o[e[2]]={};l=l+n;e=a[l];o[e[2]][e[3]]=e[4];elseif d>13 then
+while 635 do
+local e=e[2]o[e](i(o,e+n,t))break end
+else o[e[2]]=c[e[3]];end;elseif d<=16 then if d==15 then local a=e[2];local l=o[e[3]];o[a+n]=l;o[a]=l[e[4]];else while 7399 do o[e[2]]=o[e[3]][e[4]];break;end;end;elseif d<=17 then
+while 6 do
+local l=e[2]o[l]=o[l](i(o,l+n,e[3]))break end
+elseif d==18 then
+while 5 do
+local e=e[2]local a,l=u(o[e](o[e+n]))t=l+e-n
+local l=0;for e=e,t do
+l=l+n;o[e]=a[l];end;break;end
+else while 467 do local i=C[e[3]];local t;local d={};t=b({},{__index=function(l,e)local e=d[e];return e[n][e[2]];end,__newindex=function(o,e,l)local e=d[e]e[n][e[2]]=l;end;});for c=n,e[4]do l=l+n;local e=a[l];if e[1]==7 then d[c-n]={o,e[3]};else d[c-n]={f,e[3]};end;E[#E+n]=d;end;o[e[2]]=A(i,t,c);break;end;end;l=l+n;end;end;end;return A(E(),{},B())();end)(string.byte,string.char,string.sub,table.concat,table.insert,math.ldexp,getfenv or function()return _ENV end,setmetatable,select,1,0,256,unpack or table.unpack,tonumber,bit and bit.bxor or bit32 and bit32.bxor,...)
